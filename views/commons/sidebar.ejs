@@ -1,0 +1,46 @@
+<div class="vui-sidebar">
+<div class="group">
+<a class="item<% if(path=="home"){ %> active<% } %>" href="/">
+<span class="material-icons vui-icon">home</span>
+ホーム
+</a>
+<a class="item<% if(path=="search"){ %> active<% } %>" href="/search">
+<span class="material-icons vui-icon">explore</span>
+動画検索
+</a>
+<div class="divider"></div>
+<% serverData.label.forEach((label) => { %>
+<a class="item<% if(path == 'label/'+label.id){ %> active<% } %>" href="/label/<%= label.id %>" title="<%= label.name %>">
+<div class="vui-icon">
+<span class="txt-icon"><%= label.moji %></span>
+</div>
+<span class="labelName"><%= label.name %></span>
+</a>
+<% }) %>
+</div>
+<div class="divider"></div>
+<div class="group">
+<a class="item" href="https://oppai.love" target="_blank" title="">
+<div class="vui-icon">
+<span class="txt-icon">お</span>
+</div>
+<span class="categoryName">おっぱい動画</span>
+</a>
+<a href="/about" class="item<% if(path=="about"){ %> active<% } %>">
+<span class="material-icons vui-icon">info</span>
+<% if(conf.app.name === null){ %>
+<%= serverData.app.name %>とは？
+<% }else{ %>
+<%= conf.app.name %>とは？
+<% } %>
+</a>
+<div class="item">
+<span class="material-icons vui-icon">dns</span>
+Ver <%= serverData.app.version %>
+</div>
+<a class="item link" href="https://click.duga.jp/aff/api/<%= conf.api.agentid %>-<%= conf.api.bannerid %>" target="_blank">
+<img src="https://ad.duga.jp/img/webservice_142.gif" alt="DUGAウェブサービス" width="142" height="18" border="0">
+</a>
+</div>
+</div>
+<div class="vui-sidebar-back"></div>

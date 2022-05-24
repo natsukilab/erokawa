@@ -1,0 +1,36 @@
+#アプリケーション情報
+app:
+  name: DUGA AFFILIATE SITE
+  version: 0.2.8
+#DUGAカテゴリ情報
+label:
+  - id: digigra
+    name: デジタルグラビア
+    moji: デ
+  - id: spice
+    name: スパイスビジュアル
+    moji: ス
+  - id: intec
+    name: INTEC Inc
+    moji: I
+  - id: gravision
+    name: グラビジョン
+    moji: グ
+  - id: finepictures
+    name: ファインピクチャーズ
+    moji: フ
+  - id: cosdoki
+    name: コスドキ
+    moji: コ
+  - id: jellybe
+    name: JELLY-Be
+    moji: J
+labelName:
+  digigra: デジタルグラビア
+  spice: スパイスビジュアル
+  intec: INTEC Inc
+  gravision: グラビジョン
+  finepictures: ファインピクチャーズ
+  cosdoki: コスドキ
+  jellybe: JELLY-Be
+keywordNg: '-スカトロ -SM -熟女 -浣腸 -辱め -受難'
